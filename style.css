@@ -14,12 +14,9 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* scroll-behavior: smooth; */
 }
 .navbar-container{
     min-width: 99vw;
-    /* max-height:121px ;
-    min-height:70px ; */
     background-color: white;
     display: flex;
     padding: 3px ;
@@ -35,7 +32,6 @@ body{
 
 }
 .nav-options{
-    
     font-weight: 700;
     display: flex;
     list-style: none;
@@ -72,14 +68,11 @@ body{
 
 .ending{
     justify-self: flex-start;
-    margin: 10vh;
+    margin: 6vh;
     font-weight: 500;
     color: rgba(133, 133, 133, 1);
     
 
-}
-.m-bottom{
-    margin-bottom: 0;
 }
 
 @media (max-width:768px){
@@ -104,5 +97,8 @@ body{
     }
     h1{
         font-size: 25px;
+    }
+    .ending{
+        font-size: 0.7em;
     }
 }
