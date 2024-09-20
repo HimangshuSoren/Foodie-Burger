@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(246, 240, 235, 1);;
+    color: rgba(73, 33, 24, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* scroll-behavior: smooth; */
+}
+.navbar-container{
+    min-width: 99vw;
+    /* max-height:121px ;
+    min-height:70px ; */
+    background-color: white;
+    display: flex;
+    padding: 3px ;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    
+}
+#site-logo{
+    vertical-align: middle;
+    width: 40px;
+    margin-left: 20px;
+
+}
+.nav-options{
+    
+    font-weight: 700;
+    display: flex;
+    list-style: none;
+    flex-shrink: 0;
+
+
+}
+.nav-options a {
+    font-size: 15px;
+    padding: 25px;
+    color: rgba(73, 33, 24, 1);
+    text-decoration: none;
+}
+
+.grid-layout{
+    display: grid;
+    grid-template-rows: repeat(6,0.9fr);
+    align-items: center;
+    justify-content: center;
+    gap: 10vw;
+    margin-top: 40px;
+}
+.image-width-height{
+    margin:  0px 2vw;
+    height: 36vw;
+
+
+}
+.grid-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ending{
+    justify-self: flex-start;
+    margin: 10vh;
+    font-weight: 500;
+    color: rgba(133, 133, 133, 1);
+    
+
+}
+.m-bottom{
+    margin-bottom: 0;
+}
+
+@media (max-width:768px){
+    .nav-options a {
+        font-size: 12px;
+        padding: 8px;
+        color: rgba(73, 33, 24, 1);
+        text-decoration: none;
+    }
+    #site-logo{
+        width: 35px;
+    
+    }
+    .image-width-height{
+        margin: 0 30px;
+        height: 40vw;
+    }
+    .gird-layout{
+        grid-template-rows: repeat(6,0.7fr);
+        gap:35px
+
+    }
+    h1{
+        font-size: 25px;
+    }
+}
