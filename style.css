@@ -85,6 +85,12 @@ body{
 
 }
 
+.nav-options a:hover{
+    
+    color: rgb(242, 117, 0);
+    transition: color 0.2s ease-in;
+}
+
 @media (max-width:768px){
     .nav-options a {
         font-size: 12px;
