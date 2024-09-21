@@ -2,6 +2,7 @@ const scrollUp = document.querySelector('#go-to-top')
 const horiontalLines = document.querySelector('#horisontal-lines-id')
 const listOptions = document.querySelector('.nav-options')
 const navBarContainer = document.querySelector('.navbar-container')
+const listItems = document.querySelector('.list-items')
 
 horiontalLines.addEventListener('click', (e) => {
     e.stopPropagation()
@@ -32,7 +33,13 @@ navBarContainer.addEventListener('click',(e)=>{
     e.stopPropagation()
 })
 
+
 window.addEventListener('click', () => {
+    horiontalLines.parentElement.classList.remove('expand')
+    horiontalLines.classList.remove('position-lock')
+    listOptions.classList.add('display-none-phone')
+})
+listItems.addEventListener('click', () => {
     horiontalLines.parentElement.classList.remove('expand')
     horiontalLines.classList.remove('position-lock')
     listOptions.classList.add('display-none-phone')
