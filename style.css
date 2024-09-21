@@ -122,6 +122,10 @@ body{
     visibility: hidden;
 }
 
+.display-none-phone{
+    display: flex;
+}
+
 
 @media (max-width:768px){
     body{
@@ -132,7 +136,7 @@ body{
         padding: 4px 0px;
         color: rgba(73, 33, 24, 1);
         text-decoration: none;
-        width: 50vh;
+        width: 50vw;
         display: block;
     }
     #site-logo{
@@ -175,7 +179,6 @@ body{
         position: relative;
         right: 70px;
         margin-top: 7vw;
-        display: none;
         
     }
     #p-logo{
@@ -203,5 +206,7 @@ body{
         width: 40vw;
         padding: 2vh 1vh;
     }
-
+    .display-none-phone{
+        display: none !important;
+    }
 }
