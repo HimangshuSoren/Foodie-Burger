@@ -39,7 +39,7 @@ window.addEventListener('click', () => {
     horiontalLines.classList.remove('position-lock')
     listOptions.classList.add('display-none-phone')
 })
-listItems.addEventListener('click', () => {
+listOptions.addEventListener('click', () => {
     horiontalLines.parentElement.classList.remove('expand')
     horiontalLines.classList.remove('position-lock')
     listOptions.classList.add('display-none-phone')
