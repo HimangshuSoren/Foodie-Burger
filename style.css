@@ -222,7 +222,7 @@ body{
     .overlay{
         background-color: rgba(255, 255, 255, 0.489);
         width: 100vw;
-        height: 100vh;
+        height: 110vh;
         position:absolute;
         top: 0;
         left: 0;
