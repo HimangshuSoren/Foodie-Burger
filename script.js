@@ -51,5 +51,5 @@ listOptions.addEventListener('click', () => {
     horiontalLines.classList.remove('position-lock')
     listOptions.classList.add('display-none-phone')
     document.body.classList.remove('over-flow-hidden')
-    overlay.classList.toggle('dis-block')
+    overlay.classList.remove('dis-block')
 })
