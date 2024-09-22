@@ -126,6 +126,14 @@ body{
     display: flex;
 }
 
+.over-flow-hidden{
+    overflow: hidden !important;
+}
+.dis-block{
+    display: block !important;
+
+}
+
 
 @media (max-width:768px){
     body{
@@ -154,6 +162,8 @@ body{
     .gird-layout{
         grid-template-rows: repeat(6,0.7fr);
         gap:35px;
+    
+
     }
     h1{
         font-size: 25px;
@@ -172,14 +182,14 @@ body{
        right: -1vw;
        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
        transition: width 0.3s linear,height 0.3s linear, border-radius 0.3s linear;
-
     }
     .nav-options{
+      
         flex-direction: column;
         position: relative;
         right: 70px;
         margin-top: 7vw;
-        
+          
     }
     #p-logo{
         display: inline;
@@ -208,5 +218,14 @@ body{
     }
     .display-none-phone{
         display: none !important;
+    }
+    .overlay{
+        background-color: rgba(255, 255, 255, 0.489);
+        width: 100vw;
+        height: 100vh;
+        position:absolute;
+        top: 0;
+        left: 0;
+        display: none;
     }
 }

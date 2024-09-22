@@ -3,6 +3,7 @@ const horiontalLines = document.querySelector('#horisontal-lines-id')
 const listOptions = document.querySelector('.nav-options')
 const navBarContainer = document.querySelector('.navbar-container')
 const listItems = document.querySelector('.list-items')
+const overlay = document.querySelector('.overlay')
 
 horiontalLines.addEventListener('click', (e) => {
     e.stopPropagation()
@@ -12,6 +13,7 @@ horiontalLines.addEventListener('click', (e) => {
         setTimeout(() => {
             listOptions.classList.remove('display-none-phone')
         }, 300)
+        
 
     }
     else {
@@ -19,12 +21,15 @@ horiontalLines.addEventListener('click', (e) => {
 
     }
     e.target.classList.toggle('position-lock')
+    document.body.classList.toggle('over-flow-hidden')
+    overlay.classList.toggle('dis-block')
 })
 
 scrollUp.addEventListener('click', (e) => {
     e.stopPropagation()
     window.scrollTo({
-        top: -(document.body.scrollHeight),
+        // top: -(document.body.scrollHeight),
+        top:0,
         behavior: 'smooth'
     })
 })
@@ -38,9 +43,13 @@ window.addEventListener('click', () => {
     horiontalLines.parentElement.classList.remove('expand')
     horiontalLines.classList.remove('position-lock')
     listOptions.classList.add('display-none-phone')
+    overlay.classList.remove('dis-block')
+    document.body.classList.remove('over-flow-hidden')
 })
 listOptions.addEventListener('click', () => {
     horiontalLines.parentElement.classList.remove('expand')
     horiontalLines.classList.remove('position-lock')
     listOptions.classList.add('display-none-phone')
+    document.body.classList.remove('over-flow-hidden')
+    overlay.classList.toggle('dis-block')
 })
