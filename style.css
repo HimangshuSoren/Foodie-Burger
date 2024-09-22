@@ -220,12 +220,13 @@ body{
         display: none !important;
     }
     .overlay{
-        background-color: rgba(255, 255, 255, 0.489);
+        background-color: rgba(255, 255, 255, 0.5);
         width: 101vw;
         height: 101vh;
         position:absolute;
         top: 0;
         left: 0;
+        filter: blur(54px);
         display: none;
     }
 }

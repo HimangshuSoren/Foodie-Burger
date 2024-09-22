@@ -14,7 +14,7 @@ horiontalLines.addEventListener('click', (e) => {
             listOptions.classList.remove('display-none-phone')
         }, 300)
         
-
+        
     }
     else {
         listOptions.classList.add('display-none-phone')
