@@ -221,8 +221,8 @@ body{
     }
     .overlay{
         background-color: rgba(255, 255, 255, 0.489);
-        width: 110vw;
-        height: 110vh;
+        width: 101vw;
+        height: 101vh;
         position:absolute;
         top: 0;
         left: 0;
